@@ -26,10 +26,10 @@ export default class Game {
       this.height,
       this.paddleWidth,
       this.paddleHeight,
-      this.boardGap + 485,
+      this.width - this.boardGap - this.paddleWidth,
       (this.height - this.paddleHeight) / 2,
-      KEYS.a,
-      KEYS.z
+      KEYS.up,
+      KEYS.down
     );
 
     // Other code goes here...
