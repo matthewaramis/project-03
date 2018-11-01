@@ -23,11 +23,13 @@ export default class Paddle {
   } //end of constructor
 
   up() {
-    this.y = this.y - this.speed;
+    // this.y = this.y - this.speed;
+    this.y = Math.max(this.y - this.speed, 0);
   }
 
   down() {
-    this.y = this.y + this.speed;
+    // this.y = this.y + this.speed;
+    this.y = Math.min(this.y + this.speed, this.boardHeight - this.height);
   }
 
   render(svg) {
