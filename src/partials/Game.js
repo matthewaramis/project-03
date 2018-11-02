@@ -11,8 +11,8 @@ export default class Game {
 
     //Ball
     this.radius = 8;
-    this.boardWidth = this.width / 2;
-    this.boardHeight = this.height / 2;
+    this.boardWidth = this.width;
+    this.boardHeight = this.height;
 
     // Paddle
     this.paddleWidth = 8;
