@@ -65,6 +65,14 @@ export default class Game {
       return;
     }
 
+    if (this.player1.score === 10) {
+      alert("The winner is Player One!");
+      location.reload();
+    } else if (this.player2.score === 10) {
+      alert("The winner is Player Two!");
+      location.reload();
+    }
+
     // More code goes here...
     this.gameElement.innerHTML = "";
     let svg = document.createElementNS(SVG_NS, "svg");
